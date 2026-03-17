@@ -139,7 +139,11 @@ span {
 .card img {
   width: 100%;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
 .card-btn {
   margin-top: 10px;
   height: 30px;
