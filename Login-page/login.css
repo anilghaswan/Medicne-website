@@ -1,0 +1,141 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form container */
+#contioner {
+  background: #fff;
+  padding: 25px 30px;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+#contioner h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Button section */
+.button {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Login & signup buttons */
+.button button {
+  width: 48%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Login button */
+.login {
+  background: #4facfe;
+  color: white;
+}
+
+/* Signup button */
+.sign-up {
+  background: #4facfe;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+/* Labels */
+label {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Input fields */
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Input focus effect */
+input:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* Forget password */
+.span {
+  display: block;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.span a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #4facfe;
+}
+
+.span a:hover {
+  text-decoration: underline;
+}
+
+/* Submit button */
+.submit {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Hover effect */
+.submit:hover {
+  background: #4facfe;
+}
+
+/* Bottom text */
+p {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+p a {
+  text-decoration: none;
+  color: #4facfe;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
