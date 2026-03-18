@@ -162,3 +162,43 @@ footer {
   color: white;
   margin-top: 40px;
 }
+/*  */
+.left-btn {
+  background-color: black;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: white;
+  position: relative;
+  top: 120px;
+}
+.right-btn {
+  background-color: black;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: white;
+  position: relative;
+  left: 1080px;
+  top: -120px;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  height: 200px;
+  width: 100%;
+  background-color: aqua;
+  scroll-behavior: smooth;
+}
+
+.slider-box {
+  min-width: 400px;
+  margin-left: 20px;
+  height: 150px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

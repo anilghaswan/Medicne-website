@@ -114,19 +114,44 @@
       </div>
     </section>
 
+<!--  -->
+
+<button class="left-btn" onclick="prev()">Prev</button>
+
+<div class="slider" id="slider">
+  <div class="slider-box">1</div>
+  <div class="slider-box">2</div>
+  <div class="slider-box">3</div>
+  <div class="slider-box">4</div>
+  <div class="slider-box">5</div>
+</div>
+<script>
+
+function Next() {
+ document.getElementById("slider").scrollLeft+=420
+}
+function prev() {
+ document.getElementById("slider").scrollLeft-=420
+}
+</script>
+
+<button class="right-btn" onclick="Next()">></button>
+
+
+    <!-- card   -->
     <section class="products">
       <h2>Popular Medicines</h2>
 
       <div class="product-container">
         <div class="card">
-          <img src="https://via.placeholder.com/150" />
+          <img src="" alt="" />
           <h3>Paracetamol</h3>
           <p>₹50</p>
           <button class="card-btn">Add to Cart</button>
         </div>
 
         <div class="card">
-          <img src="" />
+          <img src="" alt=""/>
           <h3>Vitamin C</h3>
           <p>₹120</p>
           <button class="card-btn">Add to Cart</button>
@@ -152,4 +177,5 @@
       <p>© 2026 Medicare Pharmacy | All Rights Reserved</p>
     </footer>
   </body>
+
 </html>
