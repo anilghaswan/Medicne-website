@@ -28,6 +28,7 @@ header {
   border-radius: 3px;
   margin-top: 20px;
 }
+
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -47,6 +48,7 @@ button {
   outline: none;
   border-radius: 3px;
 }
+
 .search {
   padding: 7px;
   border: none;
@@ -63,6 +65,7 @@ button {
   align-items: center;
   text-align: center;
 }
+
 .main-content-box {
   height: 130px;
   width: 200px;
@@ -72,17 +75,21 @@ button {
   text-align: center;
   padding-top: 20px;
 }
+
 span {
   color: #2c7be5;
 }
+
 .main-content-box:hover {
   box-shadow: 2px 2px 2px rgb(175, 175, 175);
 }
+
 .main-content-box-image {
   height: 50px;
   width: 50px;
   background-size: cover;
 }
+
 .hero {
   background: #e3f2fd;
   display: flex;
@@ -94,10 +101,12 @@ span {
   height: 350px;
   color: #ffff;
 }
+
 .hero-content {
   position: absolute;
   z-index: +1;
 }
+
 .hero-image {
   height: 350px;
   width: 100%;
@@ -139,11 +148,13 @@ span {
 .card img {
   width: 100%;
 }
+
 a {
   text-decoration: none;
   color: black;
   font-weight: 900;
 }
+
 .card-btn {
   margin-top: 10px;
   height: 30px;
@@ -162,6 +173,7 @@ footer {
   color: white;
   margin-top: 40px;
 }
+
 /*  */
 .left-btn {
   background-color: black;
@@ -172,6 +184,7 @@ footer {
   position: relative;
   top: 120px;
 }
+
 .right-btn {
   background-color: black;
   border-radius: 50%;

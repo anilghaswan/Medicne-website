@@ -1,24 +1,24 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="Medicines.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medicines</title>
+  <link rel="stylesheet" href="Medicines.css" />
 </head>
+
 <body>
   <header>
     <div class="logo">Medicare</div>
 
     <nav>
-      <a href="#">Home</a>
-      <a href="file:///C:/Users/ACS/OneDrive/Desktop/Medicne%20website/Medicines/Medicines.html#" id="Medicines">Medicines</a>
-      <div id="medicine-box">vghc</div>
+      <a href="">Home</a>
+      <a href="./Medicines/Medicines.html">Medicines</a>
       <a href="#">book appotements</a>
       <a href="#">offers</a>
     </nav>
-    <input type="text" placeholder="Search medicines..." class="search"><div class="search"></div></input>
+    <input type="text" placeholder="Search medicines..." class="search" />
     <button class="sign-up">
       <a href="./Signup-page/sign-up.html">sign up</a>
     </button>
@@ -26,38 +26,12 @@
       <a href="./Login-page/login.html">login</a>
     </button>
   </header>
-  <button id="left-btn" onclick="prev()">prev</button>
-<section class="medicine" >
-  <h3>popular medicine </h3>
-  <div id="medicine">
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-</div>
-</section>
-<button id="right-btn" onclick="next()">next</button>
-<script>
-  let medicine=document.getElementById("medicine")
 
-function next(){
-    medicine.scrollLeft+=220
-    medicine.style.overflowX="auto"
-    medicine.style.scrollBehavior="smooth"
-  }
-  function prev(){
-    medicine.scrollLeft-=220
-    medicine.style.overflowX="auto"
-    medicine.style.scrollBehavior="smooth"
 
-  }
 
-</script>
+
+
 
 </body>
+
 </html>
