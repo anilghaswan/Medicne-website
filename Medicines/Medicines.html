@@ -26,6 +26,12 @@
       <a href="./Login-page/login.html">login</a>
     </button>
   </header>
+
+  <div id="slider">  
+  <button id="prev" onclick="backword()"></button>
+    <img id="img" class="img" src="" alt="slider image">
+    <button id="next" onclick="forword()"></button>
+  </div>
   <button id="left-btn" onclick="prev()">prev</button>
 <section class="medicine" >
   <h3>popular medicine </h3>
@@ -59,5 +65,32 @@ function next(){
 
 </script>
 
+<script>
+  let images = [
+  "https://cdn.netmeds.tech/v2/plain-cake-860195/netmed/wrkr/nmz/company/2/applications/65f562c1504a59a67f529ad4/theme/pictures/free/resize-w:1280/theme-image-1770717511310.jpeg?dpr=1",
+  "https://cdn.netmeds.tech/v2/plain-cake-860195/netmed/wrkr/nmz/company/2/applications/65f562c1504a59a67f529ad4/theme/pictures/free/resize-w:1280/theme-image-1773387436724.jpeg?dpr=2"
+];
+
+let index = 0;
+let img = document.getElementById("img");
+img.src=images[0]
+
+function forword() {
+  index++;
+  if (index >= images.length) {
+    index = 0;
+  }
+  img.src = images[index]; 
+}
+
+function backword() {
+  index--; // Decrease index first
+  if (index < 0) {
+    index = images.length - 1;
+  }
+  img.src = images[index]; // Update the image source
+}
+
+</script>
 </body>
 </html>
