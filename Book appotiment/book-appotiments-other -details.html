@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>book-appotiments-other-details</title>
+  </head>
+  <style>
+    * {
+      font-family:
+        "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+        Arial, sans-serif;
+      font-family: 16px;
+      font-weight: bolder;
+    }
+    h2 {
+      color: #ffff;
+      margin-top: -5px;
+    }
+    #booking-container {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #2c7be5;
+      border-radius: 2px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .input,
+    .submit {
+      width: 100%;
+      margin-bottom: 15px;
+      border-radius: 2px;
+      outline: none;
+      padding: 10px;
+      box-sizing: border-box;
+      border: none;
+    }
+    input {
+      width: 100%;
+      margin-bottom: 15px;
+      border-radius: 2px;
+      outline: none;
+      padding: 10px;
+      box-sizing: border-box;
+      border: none;
+    }
+    select {
+      width: 100%;
+      margin-bottom: 15px;
+      border-radius: 2px;
+      outline: none;
+      padding: 10px;
+      box-sizing: border-box;
+      border: none;
+    }
+    select:focus,
+    input:focus {
+      border: 2px solid #007bff;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      cursor: pointer;
+    }
+    #checkbox {
+      display: flex;
+    }
+    #radio {
+      display: flex;
+      justify-content: start;
+    }
+  </style>
+  <body>
+    <div id="booking-container">
+      <form action="">
+        <h2>booking-appotiments other details</h2>
+        <input type="text" placeholder="e-mail" required />
+        <select
+          name="patient_category"
+          style="color: rgb(113, 113, 113)"
+          required
+        >
+          <option value="" default value>chooce pacent category</option>
+          <optgroup label="Adults">
+            <option>Male</option>
+            <option>Female</option>
+          </optgroup>
+          <optgroup label="Children">
+            <option>Kids (Under 12)</option>
+            <option>Infants</option>
+          </optgroup>
+        </select>
+        <input type="date" name="date " placeholder="date of barth" required />
+        <input type="text"   placeholder="address" required> 
+     
+    </div>
+  </body>
+</html>
