@@ -69,3 +69,57 @@
     grid-template-columns: 1fr;
   }
 }
+#footer-payment {
+  background-color: #eef1f5;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer-payment-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-payment-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #2d2d2d;
+}
+
+.footer-payment-logos {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-payment-logos img {
+  height: 30px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.footer-payment-logos img:hover {
+  transform: scale(1.1);
+}
+
+.footer-payment-right {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-payment-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .footer-payment-right {
+    align-self: flex-end;
+  }
+}
