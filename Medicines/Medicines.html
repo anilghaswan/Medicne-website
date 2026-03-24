@@ -1,96 +1,86 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="Medicines.css">
-</head>
-<body>
-  <header>
-    <div class="logo">Medicare</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicines</title>
+    <link rel="stylesheet" href="Medicines.css" />
+  </head>
 
-    <nav>
-      <a href="#">Home</a>
-      <a href="file:///C:/Users/ACS/OneDrive/Desktop/Medicne%20website/Medicines/Medicines.html#" id="Medicines">Medicines</a>
-      <div id="medicine-box">vghc</div>
-      <a href="#">book appotements</a>
-      <a href="#">offers</a>
-    </nav>
-    <input type="text" placeholder="Search medicines..." class="search"><div class="search"></div></input>
-    <button class="sign-up">
-      <a href="./Signup-page/sign-up.html">sign up</a>
-    </button>
-    <button class="login-btn">
-      <a href="./Login-page/login.html">login</a>
-    </button>
-  </header>
+  <body>
+    <header>
+      <div class="logo">Medicare</div>
 
-  <div id="slider">  
-  <button id="prev" onclick="backword()"></button>
-    <img id="img" class="img" src="" alt="slider image">
-    <button id="next" onclick="forword()"></button>
-  </div>
-  <button id="left-btn" onclick="prev()">prev</button>
-<section class="medicine" >
-  <h3>popular medicine </h3>
-  <div id="medicine">
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-  <div class="box"></div>
-</div>
-</section>
-<button id="right-btn" onclick="next()">next</button>
-<script>
-  let medicine=document.getElementById("medicine")
+      <nav>
+        <a href="">Home</a>
+        <a href="./Medicines/Medicines.html">Medicines</a>
+        <a href="#">book appotements</a>
+        <a href="#">offers</a>
+      </nav>
+      <input type="text" placeholder="Search medicines..." class="search" />
+      <button class="sign-up">
+        <a href="./Signup-page/sign-up.html">sign up</a>
+      </button>
+      <button class="login-btn">
+        <a href="./Login-page/login.html">login</a>
+      </button>
+    </header>
+    <button id="left-btn" onclick="prev()">prev</button>
+    <section class="medicine">
+      <h3>popular medicine</h3>
+      <div id="medicine">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </section>
+    <button id="right-btn" onclick="next()">next</button>
+    <script>
+      let medicine = document.getElementById("medicine");
 
-function next(){
-    medicine.scrollLeft+=220
-    medicine.style.overflowX="auto"
-    medicine.style.scrollBehavior="smooth"
-  }
-  function prev(){
-    medicine.scrollLeft-=220
-    medicine.style.overflowX="auto"
-    medicine.style.scrollBehavior="smooth"
+      function next() {
+        medicine.scrollLeft += 220;
+        medicine.style.overflowX = "auto";
+        medicine.style.scrollBehavior = "smooth";
+      }
+      function prev() {
+        medicine.scrollLeft -= 220;
+        medicine.style.overflowX = "auto";
+        medicine.style.scrollBehavior = "smooth";
+      }
+    </script>
 
-  }
+    <script>
+      let images = [
+        "https://cdn.netmeds.tech/v2/plain-cake-860195/netmed/wrkr/nmz/company/2/applications/65f562c1504a59a67f529ad4/theme/pictures/free/resize-w:1280/theme-image-1770717511310.jpeg?dpr=1",
+        "https://cdn.netmeds.tech/v2/plain-cake-860195/netmed/wrkr/nmz/company/2/applications/65f562c1504a59a67f529ad4/theme/pictures/free/resize-w:1280/theme-image-1773387436724.jpeg?dpr=2",
+      ];
 
-</script>
+      let index = 0;
+      let img = document.getElementById("img");
+      img.src = images[0];
 
-<script>
-  let images = [
-  "https://cdn.netmeds.tech/v2/plain-cake-860195/netmed/wrkr/nmz/company/2/applications/65f562c1504a59a67f529ad4/theme/pictures/free/resize-w:1280/theme-image-1770717511310.jpeg?dpr=1",
-  "https://cdn.netmeds.tech/v2/plain-cake-860195/netmed/wrkr/nmz/company/2/applications/65f562c1504a59a67f529ad4/theme/pictures/free/resize-w:1280/theme-image-1773387436724.jpeg?dpr=2"
-];
+      function forword() {
+        index++;
+        if (index >= images.length) {
+          index = 0;
+        }
+        img.src = images[index];
+      }
 
-let index = 0;
-let img = document.getElementById("img");
-img.src=images[0]
-
-function forword() {
-  index++;
-  if (index >= images.length) {
-    index = 0;
-  }
-  img.src = images[index]; 
-}
-
-function backword() {
-  index--; // Decrease index first
-  if (index < 0) {
-    index = images.length - 1;
-  }
-  img.src = images[index]; // Update the image source
-}
-
-</script>
-</body>
+      function backword() {
+        index--;
+        if (index < 0) {
+          index = images.length - 1;
+        }
+        img.src = images[index];
+      }
+    </script>
+  </body>
 </html>
