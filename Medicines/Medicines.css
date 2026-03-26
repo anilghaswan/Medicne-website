@@ -76,7 +76,7 @@ a:hover {
 }
 
 #medicine {
-  height: 160px;
+  height: 170px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -86,6 +86,9 @@ a:hover {
   /* overflow-x: auto; */
   /* scroll-behavior: smooth; */
 }
+#medicine::-webkit-scrollbar {
+  display: none;
+}
 
 .box {
   height: 130px;
@@ -93,50 +96,60 @@ a:hover {
   background-color: antiquewhite;
   border-radius: 10px;
   margin-left: 10px;
+  background: cover, no-repeat, fixed;
+}
+.box-img {
+  height: 130px;
+  min-width: 130px;
+  border-radius: 10px;
 }
 
 #left-btn {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  color: #f4f6f9;
+  font-weight: bolder;
   border: none;
   outline: none;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   position: relative;
-  top: 120px;
+  top: 150px;
+  left: 10px;
 }
 
 #right-btn {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
   border-radius: 50%;
-  color: #f4f6f9;
+  font-weight: bolder;
   border: none;
   outline: none;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   position: relative;
-  left: 1090px;
-  top: -105px;
+  left: 1070px;
+  top: -120px;
 }
 
 h3 {
   margin-left: 10px;
 }
+/*slider code */
 #slider {
   height: 250px;
   width: 98%;
-  border: 1px solid black;
+  border: none;
   background-color: none;
   background-size: cover;
   margin-left: 10px;
   margin-top: 10px;
 }
+/* slider image  */
 .img {
   height: 250px;
   width: 100%;
 }
 
+/* slider prev btn */
 #prev {
   background-color: rgb(255, 255, 255);
   position: absolute;
@@ -147,6 +160,7 @@ h3 {
   border-radius: 50%;
 }
 
+/* slider next btn */
 #next {
   background-color: rgb(255, 255, 255);
   position: absolute;
@@ -155,6 +169,32 @@ h3 {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+/* slider code complete */
+
+/* horizontial slider code  */
+
+.slider {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  height: 200px;
+  width: 100%;
+  background-color: aqua;
+  scroll-behavior: smooth;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+.slider-box {
+  min-width: 400px;
+  margin-left: 20px;
+  height: 150px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
 }
 
 .left-btn {
@@ -178,22 +218,53 @@ h3 {
   top: -120px;
 }
 
-.slider {
+/* slider 2 css  */
+
+#slider2 {
+  width: 100%;
+  height: 170px;
+  box-sizing: border-box;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   overflow-x: auto;
-  height: 200px;
-  width: 100%;
-  background-color: aqua;
   scroll-behavior: smooth;
+  margin-bottom: 10px;
+}
+#slider2::-webkit-scrollbar {
+  display: none;
+}
+.slider2-box {
+  height: 130px;
+  min-width: 130px;
+  background-color: bisque;
+  border-radius: 20px;
+  margin-left: 10px;
+  background: cover, no-repeat, fixed;
+}
+.slider2-box img {
+  height: 130px;
+  min-width: 130px;
 }
 
-.slider-box {
-  min-width: 400px;
-  margin-left: 20px;
-  height: 150px;
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#slider2-btnleft {
+  height: 50px;
+  width: 50px;
+  color: black;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  top: 130px;
+  left: -40px;
+}
+#slider2-btnright {
+  height: 50px;
+  width: 50px;
+  color: black;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+  left: 1070px;
+  top: -110px;
 }

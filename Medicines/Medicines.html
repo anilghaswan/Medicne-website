@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medicines</title>
     <link rel="stylesheet" href="Medicines.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -25,34 +29,76 @@
         <a href="./Login-page/login.html">login</a>
       </button>
     </header>
-    <button id="left-btn" onclick="prev()">prev</button>
+    <div id="slider">
+      <button id="prev" onclick="backword()">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <img id="img" class="img" src="" alt="" />
+      <button id="next" onclick="forword()">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+
+    <button id="left-btn" onclick="prev()">
+      <i class="fa-solid fa-angle-left"></i>
+    </button>
     <section class="medicine">
       <h3>popular medicine</h3>
       <div id="medicine">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">
+          <img class="box-img" src="../images/liver care.avif" alt="" />
+          kideny care
+        </div>
+        <div class="box">
+          <img class="box-img" src="../images/ear condition.avif" alt="" />
+          ear condition
+        </div>
+        <div class="box">
+          <img class="box-img" src="../images/eye condition.avif" alt="" />
+          eye condition
+        </div>
+        <div class="box">
+          <img class="box-img" src="../images/kideny care.avif" alt="" />
+          kideny care
+        </div>
+
+        <div class="box">
+          <img class="box-img" src="../images/nasal congestion.avif" alt="" />
+          nasal congestion
+        </div>
+        <div class="box">
+          <img class="box-img" src="../images/oral care.avif" alt="" />
+          oral care
+        </div>
+        <div class="box">
+          <img class="box-img" src="../images/skin infection.avif" alt="" />
+          skin infection
+        </div>
+        <div class="box">
+          <img class="box-img" src="../images/urinary care.avif" alt="" />
+          urinary care
+        </div>
+        <div class="box">
+          <img class="box-img" src="../images/hair fool.avif" alt="" />hair fool
+          h
+        </div>
       </div>
     </section>
-    <button id="right-btn" onclick="next()">next</button>
+    <button id="right-btn" onclick="next()">
+      <i class="fa-solid fa-angle-right"></i>
+    </button>
     <script>
       let medicine = document.getElementById("medicine");
 
       function next() {
         medicine.scrollLeft += 220;
         medicine.style.overflowX = "auto";
-        medicine.style.scrollBehavior = "smooth";
+        medicine.style.scrollBehavior = "fast";
       }
       function prev() {
         medicine.scrollLeft -= 220;
         medicine.style.overflowX = "auto";
-        medicine.style.scrollBehavior = "smooth";
+        medicine.style.scrollBehavior = "fast";
       }
     </script>
 
@@ -73,13 +119,133 @@
         }
         img.src = images[index];
       }
-
       function backword() {
         index--;
         if (index < 0) {
           index = images.length - 1;
         }
         img.src = images[index];
+      }
+    </script>
+    <button id="slider2-btnleft" onclick="prevslider2()">
+      <i class="fa-solid fa-angle-left"></i>
+    </button>
+    <h3>comman health issue</h3>
+    <section id="slider2">
+      <div class="slider2-box">
+        <img src="../image2  slider/Bactreial infection.avif" alt="" />bacterial
+        infection
+      </div>
+      <div class="slider2-box">
+        <img src="../image2  slider/Fever.avif" alt="fever" />fever
+      </div>
+      <div class="slider2-box">
+        <img
+          src="../image2  slider/Digestion.avif"
+          alt="deigastion"
+        />deigastion
+      </div>
+      <div class="slider2-box">
+        <img src="../image2  slider/Dibetes.avif" alt="dibetas" />dibetas
+      </div>
+      <div class="slider2-box">
+        <img
+          src="../image2  slider/Hypertension.avif"
+          alt="hypertension"
+        />hypertension
+      </div>
+      <div class="slider2-box">
+        <img src="../image2  slider/Malarial.avif" alt="Malarial" />Malarial
+      </div>
+      <div class="slider2-box">
+        <img src="../image2  slider/Higeht colastrol.avif" alt="Height" />Height
+        colastroal
+      </div>
+      <div class="slider2-box">
+        <img
+          src="../image2  slider/Muscle Spasm.avif"
+          alt="Muslase spasm"
+        />Muslase spasm
+      </div>
+      <div class="slider2-box">
+        <img src="../image2  slider/Dandruff.avif" alt="Dandruff" />Dandruff
+      </div>
+      <div class="slider2-box">
+        <img src="../image2  slider/Pain Relief.avif" alt="Pain relife" /> Pain
+        relife
+      </div>
+    </section>
+    <button id="slider2-btnright" onclick="nextslider2()">
+      <i class="fa-solid fa-angle-right"></i>
+    </button>
+    <script>
+      let slider2 = document.getElementById("slider2");
+      function nextslider2() {
+        slider2.scrollLeft += 300;
+      }
+      function prevslider2() {
+        slider2.scrollLeft -= 300;
+      }
+    </script>
+    <!-- slider  3 html code  -->
+    <button id="slider3-btnleft" onclick="prevslider3()">
+      <i class="fa-solid fa-angle-left"></i>
+    </button>
+    <h3>comman health issue</h3>
+    <section id="slider3">
+      <div class="slider3-box">
+        <img src="../image2  slider/Bactreial infection.avif" alt="" />bacterial
+        infection
+      </div>
+      <div class="slider3-box">
+        <img src="../image2  slider/Fever.avif" alt="fever" />fever
+      </div>
+      <div class="slider3-box">
+        <img
+          src="../image2  slider/Digestion.avif"
+          alt="deigastion"
+        />deigastion
+      </div>
+      <div class="slider3-box">
+        <img src="../image2  slider/Dibetes.avif" alt="dibetas" />dibetas
+      </div>
+      <div class="slider3-box">
+        <img
+          src="../image2  slider/Hypertension.avif"
+          alt="hypertension"
+        />hypertension
+      </div>
+      <div class="slider3-box">
+        <img src="../image2  slider/Malarial.avif" alt="Malarial" />Malarial
+      </div>
+      <div class="slider3-box">
+        <img src="../image2  slider/Higeht colastrol.avif" alt="Height" />Height
+        colastroal
+      </div>
+      <div class="slider3-box">
+        <img
+          src="../image2  slider/Muscle Spasm.avif"
+          alt="Muslase spasm"
+        />Muslase spasm
+      </div>
+      <div class="slider3-box">
+        <img src="../image2  slider/Dandruff.avif" alt="Dandruff" />Dandruff
+      </div>
+      <div class="slider3-box">
+        <img src="../image2  slider/Pain Relief.avif" alt="Pain relife" /> Pain
+        relife
+      </div>
+    </section>
+    <button id="slider3-btnright" onclick="nextslider3()">
+      <i class="fa-solid fa-angle-right"></i>
+    </button>
+    <script>
+      let slider3 = document.getElementById("slider3");
+      function nextslider3() {
+        slider3.scrollLeft += 300;
+      }
+      function prevslider3() {
+        slider3.scrollLeft -= 300;
       }
     </script>
   </body>

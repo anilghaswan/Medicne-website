@@ -1,48 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<link rel="stylesheet" href="doctor consulte.css">
-<body>
-  <header>
-    <div class="logo">Medicare</div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="./Medicines/Medicines.html">Medicines</a>
-      <a href="#">book appotements</a>
-      <a href="#">offers</a>
-    </nav>
-    <input type="text" placeholder="Search medicines..." class="search"><div class="search"></div></input>
-    <button class="sign-up">
-      <a href="./Signup-page/sign-up.html">sign up</a>
-    </button>
-    <button class="login-btn">
-      <a href="./Login-page/login.html">login</a>
-    </button>
-  </header>
-  <section class="hero">
-    <img class="hero-image" src="images/images medicene.jpg" alt="" />
-    <div class="hero-content">
-      <h1>Your Online Pharmacy</h1>
-      <p>Get medicines delivered to your doorstep</p>
-      <button class="Shop-now">Shop Now</button>
-    </div>
-  </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Consulation</title>
+    <link rel="stylesheet" href="doctor consulte.css">
+  </head>
+  <body>
 
-  <div id="doctor-consult">
-    <div class="heading"><h3>expricence doctors</h3></div>
-    <div id="section">
-      <div class="section-box"></div>
-      <div class="section-box"></div>
-      <div class="section-box"></div>
-      <div class="section-box"></div>
-      <div class="section-box"></div>
-      <div class="section-box"></div>
-      <div class="section-box"></div>
+    <header>
+      <div class="logo">Medicare</div>
+  
+      <nav>
+        <a href="#">Home</a>
+        <a href="./Medicines/Medicines.html">Medicines</a>
+        <a href="#">book appotements</a>
+        <a href="#">offers</a>
+      </nav>
+      <input type="text" placeholder="Search medicines..." class="search">
+      <div class="search"></div></input>
+      <button class="sign-up">
+        <a href="./Signup-page/sign-up.html">sign up</a>
+      </button>
+      <button class="login-btn">
+        <a href="./Login-page/login.html">login</a>
+      </button>
+    </header>
+
+    <h2 class="section-title">Our Doctors</h2>
+    <div class="grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="avatar" style="background: #e6f1fb; color: #0c447c">PS</div>
+        <p class="name">Dr. Priya Sharma</p>
+        <p class="specialty">Cardiologist</p>
+        <hr class="divider" />
+        <p class="description">
+          Specialist in heart disease, hypertension, and cardiac risk management
+          with 14 years of experience.
+        </p>
+        <button class="book-btn">Book Appointment</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="avatar" style="background: #eeedfe; color: #3c3489">RN</div>
+        <p class="name">Dr. Rahul Nair</p>
+        <p class="specialty">Neurologist</p>
+        <hr class="divider" />
+        <p class="description">
+          Focuses on migraine, epilepsy, and stroke treatment. Known for
+          patient-centred diagnosis and care.
+        </p>
+        <button class="book-btn">Book Appointment</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="avatar" style="background: #e1f5ee; color: #085041">AD</div>
+        <p class="name">Dr. Anita Desai</p>
+        <p class="specialty">Pediatrician</p>
+        <hr class="divider" />
+        <p class="description">
+          Dedicated to child health, vaccinations, and nutrition guidance for
+          newborns through adolescents.
+        </p>
+        <button class="book-btn">Book Appointment</button>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="avatar" style="background: #faece7; color: #712b13">VG</div>
+        <p class="name">Dr. Vikram Gupta</p>
+        <p class="specialty">Dermatologist</p>
+        <hr class="divider" />
+        <p class="description">
+          Treats acne, eczema, and skin allergies using the latest
+          evidence-based dermatological techniques.
+        </p>
+        <button class="book-btn">Book Appointment</button>
+      </div>
     </div>
+ 
+    <!-- section to grid -->
+    <div class="grid">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="avatar" style="background: #e6f1fb; color: #0c447c">PS</div>
+        <p class="name">Dr. Priya Sharma</p>
+        <p class="specialty">Cardiologist</p>
+        <hr class="divider" />
+        <p class="description">
+          Specialist in heart disease, hypertension, and cardiac risk management
+          with 14 years of experience.
+        </p>
+        <button class="book-btn">Book Appointment</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="avatar" style="background: #eeedfe; color: #3c3489">RN</div>
+        <p class="name">Dr. Rahul Nair</p>
+        <p class="specialty">Neurologist</p>
+        <hr class="divider" />
+        <p class="description">
+          Focuses on migraine, epilepsy, and stroke treatment. Known for
+          patient-centred diagnosis and care.
+        </p>
+        <button class="book-btn">Book Appointment</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="avatar" style="background: #e1f5ee; color: #085041">AD</div>
+        <p class="name">Dr. Anita Desai</p>
+        <p class="specialty">Pediatrician</p>
+        <hr class="divider" />
+        <p class="description">
+          Dedicated to child health, vaccinations, and nutrition guidance for
+          newborns through adolescents.
+        </p>
+        <button class="book-btn">Book Appointment</button>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="avatar" style="background: #faece7; color: #712b13">VG</div>
+        <p class="name">Dr. Vikram Gupta</p>
+        <p class="specialty">Dermatologist</p>
+        <hr class="divider" />
+        <p class="description">
+          Treats acne, eczema, and skin allergies using the latest
+          evidence-based dermatological techniques.
+        </p>
+        <button class="book-btn">Book Appointment</button>
+      </div>
+    </div>
+
+    <div id="service ">
+    <h2>
+      our proviede service 
+    </h2>
+    
   </div>
-</body>
+  </body>
 </html>
